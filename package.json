@@ -1,0 +1,37 @@
+{
+  "name": "canvas-pixfmt",
+  "version": "0.1.0",
+  "description": "Canvas binding texture supports various pixel formats",
+  "main": "./lib/canvas-pixfmt.js",
+  "scripts": {
+    "prepublish": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luuvish/canvas-pixfmt.git"
+  },
+  "keywords": [
+    "webgl",
+    "canvas",
+    "texture",
+    "pixel format"
+  ],
+  "author": "luuvish <luuvish@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luuvish/canvas-pixfmt/issues"
+  },
+  "homepage": "https://github.com/luuvish/canvas-pixfmt",
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "coffeelint": "^1.9.3",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-coffeelint": "0.0.13",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-shell": "^1.1.2",
+    "jasmine-focused": "^1.0.7",
+    "rimraf": "^2.3.2"
+  }
+}
