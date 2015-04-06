@@ -34,6 +34,7 @@ class CanvasPixfmtYUV extends CanvasPixfmtBase
     texture = (gl.createTexture() for i in [0...3])
     for tex in texture
       gl.bindTexture gl.TEXTURE_2D, tex
+      gl.pixelStorei gl.UNPACK_FLIP_Y_WEBGL, true
       gl.texImage2D gl.TEXTURE_2D, 0, gl.LUMINANCE, 0, 0, 0, gl.LUMINANCE, gl.UNSIGNED_BYTE, null
       gl.texParameteri gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST
       gl.texParameteri gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST
